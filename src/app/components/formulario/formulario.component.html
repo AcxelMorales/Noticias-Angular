@@ -1,0 +1,19 @@
+<div class="buscador row">
+  <div class="col s12 m8 offset-m2">
+      <form>
+          <h2>Encuentra Noticias por Categoria</h2>
+          <div class="input-field col s12 m8 offset-m2">
+              <select name="cat" (change)="change($event.target.value)">
+                  <option value="general">General</option>
+                  <option value="business">Negocios</option>
+                  <option value="entertainment">Entretenimiento</option>
+                  <option value="health">Salud</option>
+                  <option value="science">Ciencia</option>
+                  <option value="sports">Deportes</option>
+                  <option value="technology">Tecnología</option>
+              </select>
+          </div>
+      </form>
+  </div>
+</div>
+<app-listado></app-listado>
